@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantina da Nonna - Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <h1 class="logo">Cantina da Nonna</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SEÇÃO PRINCIPAL -->
+    <section class="hero centralizar" id="inicio">
+      <div class="hero-texto">
+        <h2>Comida italiana feita com carinho</h2>
+        <p>
+          Massas frescas, pizzas no forno a lenha e sobremesas caseiras.
+          Venha almoçar ou jantar com a gente!
+        </p>
+        <a href="#cardapio" class="botao-base botao-principal">Ver cardápio</a>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO (cards) -->
+    <section class="secao" id="cardapio">
+      <h2 class="titulo-secao">Nossos pratos</h2>
+
+      <!-- botão que usa a função de desconto -->
+      <div class="promocao centralizar">
+        <p id="aviso-promocao">Hoje tem promoção: 15% de desconto em todos os pratos!</p>
+        <button id="btn-promocao" class="botao-base botao-secundario">Ativar desconto</button>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-imagem">🍝</div>
+          <h3>Spaghetti à Carbonara</h3>
+          <p>Massa fresca com ovos, queijo pecorino e bacon crocante.</p>
+          <p class="preco">R$ <span class="valor" data-preco="42">42,00</span></p>
+          <button class="botao-base botao-principal">Pedir</button>
+        </article>
+
+        <article class="card">
+          <div class="card-imagem">🍕</div>
+          <h3>Pizza Margherita</h3>
+          <p>Molho de tomate, mussarela de búfala e manjericão fresco.</p>
+          <p class="preco">R$ <span class="valor" data-preco="55">55,00</span></p>
+          <button class="botao-base botao-principal">Pedir</button>
+        </article>
+
+        <article class="card">
+          <div class="card-imagem">🍰</div>
+          <h3>Tiramisù</h3>
+          <p>Sobremesa tradicional com café, mascarpone e cacau.</p>
+          <p class="preco">R$ <span class="valor" data-preco="28">28,00</span></p>
+          <button class="botao-base botao-principal">Pedir</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao sobre" id="sobre">
+      <h2 class="titulo-secao">Sobre nós</h2>
+      <p>
+        A Cantina da Nonna existe desde 1998 e usa receitas que passam de
+        geração em geração. Nosso ambiente é simples e acolhedor, perfeito
+        para ir com a família ou com os amigos.
+      </p>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape centralizar" id="contato">
+    <div class="rodape-info">
+      <p><strong>Cantina da Nonna</strong></p>
+      <p>Rua das Flores, 123 - Centro</p>
+      <p>Aberto de terça a domingo, das 11h às 23h</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p class="copy">© 2026 Cantina da Nonna - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
